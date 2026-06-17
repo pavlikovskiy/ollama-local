@@ -3,16 +3,18 @@ import { readFileSync } from 'fs'
 
 // Initialize the client with your external URL
 const ollamaSrv = new Ollama({
-  host: 'http://192.168.0.123:11434'
+  host: 'http://localhost:11434'
 })
 
 const getPrompt = () =>
-    `translate following text to Russian: ` + readFileSync('translation-input', 'utf8')
+    `Translate the following text from English to Russian. ` +
+    `Output only the translation, with no explanations or notes:\n\n` +
+    readFileSync('translation-input.txt', 'utf8')
 
 
 const translationWithOllama = async () => {
   const response = await ollamaSrv.generate({
-    model: 'qwen3.5:4b',
+    model: 'qwen3.5:2b',
     prompt: getPrompt(),
     stream: false // Disables line-by-line streaming
   })
