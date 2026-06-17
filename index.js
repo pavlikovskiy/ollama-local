@@ -3,19 +3,22 @@ import fs from 'fs'
 
 // Initialize the client with your external URL
 const ollamaSrv = new Ollama({
-  host: 'http://localhost:11434'
+  host: 'http://192.168.0.123:11434'
 })
 
+//     `Output only the translation, with no explanations or notes:\n\n` +
+//     `Translate the following segment into Russian, without additional explanation. ` +
+
 const getPrompt = () =>
-    `Translate the following text from English to Russian. ` +
-    `Output only the translation, with no explanations or notes:\n\n` +
+    `Translate the following segment into Spanish, without additional explanation. ` +
+    `\n\n` +
     fs.readFileSync('translation-input.txt', 'utf8')
 
 
 const translationWithOllama = async () => {
   const start = Date.now()
   const response = await ollamaSrv.generate({
-    model: 'qwen3.5:2b',
+    model: 'translategemma:4b',
     prompt: getPrompt(),
     stream: false // Disables line-by-line streaming
   })
