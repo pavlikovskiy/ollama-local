@@ -7,7 +7,7 @@ const ollamaSrv = new Ollama({
 })
 
 const getPrompt = () =>
-    `translate following text to Russian: ` + readFileSync('prompt.txt', 'utf8')
+    `translate following text to Russian: ` + readFileSync('translation-input', 'utf8')
 
 
 const translationWithOllama = async () => {
