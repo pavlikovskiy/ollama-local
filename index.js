@@ -10,15 +10,16 @@ const ollamaSrv = new Ollama({
 //     `Translate the following segment into Russian, without additional explanation. ` +
 
 const getPrompt = () =>
-    `Translate the following segment into Spanish, without additional explanation. ` +
+    `Translate the following html from English to Russian. ` +
+    `Output only the translation, with no explanations or notes:` +
     `\n\n` +
-    fs.readFileSync('translation-input.txt', 'utf8')
+    fs.readFileSync('welcome_en.html', 'utf8')
 
 
 const translationWithOllama = async () => {
   const start = Date.now()
   const response = await ollamaSrv.generate({
-    model: 'translategemma:4b',
+    model: 'qwen3.5:9b-64k',
     prompt: getPrompt(),
     stream: false // Disables line-by-line streaming
   })
