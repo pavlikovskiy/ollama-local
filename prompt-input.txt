@@ -1,0 +1,7 @@
+fetch https://en.wikipedia.org/wiki/Italy
+cleanup from links, create brief description
+what year the country created, who is predecender, who is successor if any.
+Keep general, historical and cultural content and drop others
+and save in html format.
+Output only the translation, with no explanations or notes:
+

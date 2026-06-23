@@ -6,14 +6,7 @@ const ollamaSrv = new Ollama({
   host: 'http://192.168.0.123:11434'
 })
 
-//     `Output only the translation, with no explanations or notes:\n\n` +
-//     `Translate the following segment into Russian, without additional explanation. ` +
-
-const getPrompt = () =>
-    `Translate the following html from English to Russian. ` +
-    `Output only the translation, with no explanations or notes:` +
-    `\n\n` +
-    fs.readFileSync('welcome_en.html', 'utf8')
+const getPrompt = () => fs.readFileSync('prompt-input.txt', 'utf8')
 
 
 const translationWithOllama = async () => {
@@ -26,7 +19,7 @@ const translationWithOllama = async () => {
   const seconds = (Date.now() - start) / 1000
 
 // Access the flat response field
-  const outputFile = `translation-output-${Date.now()}-${seconds.toFixed(2)}s.txt`
+  const outputFile = `translation-output-${Date.now()}-${seconds.toFixed(2)}s.html`
   fs.writeFileSync(outputFile, response.response)
   console.log(response.response)
   console.log(`Generation time: ${seconds.toFixed(2)}s`)
