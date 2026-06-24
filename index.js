@@ -6,7 +6,7 @@ const ollamaSrv = new Ollama({
   host: 'http://192.168.0.123:11434'
 })
 
-const getPrompt = () => fs.readFileSync('prompt-input.txt', 'utf8')
+const getPrompt = () => fs.readFileSync('prompt-gpt.txt', 'utf8')
 
 
 const translationWithOllama = async () => {
