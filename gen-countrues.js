@@ -42,7 +42,7 @@ const generate = async () => {
         .map(row => row.split(','));
 
     for (const row of parsedData) {
-      if (!fs.existsSync(`out/${row[0]}.html`, 'utf8'))
+      if (!fs.existsSync(`done/${row[0]}.html`, 'utf8'))
         await generateWithOllama(row[0], row[1]);
     }
 

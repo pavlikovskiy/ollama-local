@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "mysql2": "^3.22.5",
     "ollama": "^0.6.3"
   }
 }
