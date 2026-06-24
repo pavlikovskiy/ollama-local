@@ -6,7 +6,10 @@ const ollamaSrv = new Ollama({
   host: 'http://192.168.0.123:11434'
 })
 
-const getPrompt = () => fs.readFileSync('prompt-gpt.txt', 'utf8')
+const getPrompt = () =>
+    `COUNTRY_NAME = https://en.wikipedia.org/wiki/Roman_Empire` +
+    `\n\n` +
+    fs.readFileSync('in/prompt-gpt.txt', 'utf8')
 
 
 const translationWithOllama = async () => {
@@ -19,7 +22,7 @@ const translationWithOllama = async () => {
   const seconds = (Date.now() - start) / 1000
 
 // Access the flat response field
-  const outputFile = `translation-output-${Date.now()}-${seconds.toFixed(2)}s.html`
+  const outputFile = `out/translation-output-${Date.now()}-${seconds.toFixed(2)}s.html`
   fs.writeFileSync(outputFile, response.response)
   console.log(response.response)
   console.log(`Generation time: ${seconds.toFixed(2)}s`)

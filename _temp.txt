@@ -1,2 +1,3 @@
 ollama create qwen3.5:9b-64k -f Modelfile
 
+ollama create qwen3.6:27b-64k -f Modelfile
