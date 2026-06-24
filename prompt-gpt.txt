@@ -11,21 +11,17 @@ Requirements:
 * Do not copy, paraphrase, or summarize Wikipedia.
 * Do not include citations, references, footnotes, or external links.
 * Do not mention modern political controversies.
-* Avoid excessive lists of dates, rulers, battles, and administrative details.
+* Avoid excessive lists of dates, battles.
 * Write in clear, professional English suitable for a general audience.
 * Use a balanced approach:
 
-  * Approximately 50% historical and cultural context.
-  * Approximately 50% coinage and numismatic history.
+  * Approximately 60% historical and cultural context.
+  * Approximately 40% coinage and numismatic history.
 * Focus on topics valuable to collectors.
 
 Structure:
 
 # {COUNTRY_NAME}: History, Coinage and Collectibles
-
-## Introduction
-
-Provide a concise overview of the country's historical significance and why it remains important to collectors today.
 
 ## Historical Background
 
@@ -66,8 +62,7 @@ Do not discuss authentication, grading, or investment advice.
 Explain how the country's coinage reflects its culture, economy, religion, symbols, rulers, or historical achievements.
 
 ## Conclusion
-
-Summarize the country's importance in world history and numismatics, emphasizing why its coins and collectibles continue to attract interest today.
+Provide a concise overview of the country's historical significance and why it remains important to collectors today.
 
 Writing Style:
 
