@@ -1,0 +1,87 @@
+COUNTRY_NAME = https://en.wikipedia.org/wiki/Roman_Empire
+
+Generate an original article for www.hobbyray.com about {COUNTRY_NAME}.
+
+The article is intended for coin collectors, history enthusiasts, and auction buyers. It should be educational, engaging, and written in the style of a museum curator explaining the historical and numismatic significance of the country, empire, kingdom, or state.
+
+Requirements:
+
+* Length: 1,000-1,500 words.
+* Original content only.
+* Do not copy, paraphrase, or summarize Wikipedia.
+* Do not include citations, references, footnotes, or external links.
+* Do not mention modern political controversies.
+* Avoid excessive lists of dates, rulers, battles, and administrative details.
+* Write in clear, professional English suitable for a general audience.
+* Use a balanced approach:
+
+  * Approximately 50% historical and cultural context.
+  * Approximately 50% coinage and numismatic history.
+* Focus on topics valuable to collectors.
+
+Structure:
+
+# {COUNTRY_NAME}: History, Coinage and Collectibles
+
+## Introduction
+
+Provide a concise overview of the country's historical significance and why it remains important to collectors today.
+
+## Historical Background
+
+Describe the major historical developments that shaped the country, empire, kingdom, or state. Focus on events that influenced trade, economy, culture, and monetary systems.
+
+## Currency and Coinage History
+
+Explain how money evolved in this region. Describe important monetary reforms, major periods of coin production, and the role of coinage in commerce and government.
+
+## Mints and Coin Production
+
+Discuss important mints, production centers, minting traditions, technologies, and artistic characteristics that distinguish the country's coinage.
+
+## Notable Coins
+
+Describe several of the most historically important or widely collected coin types. For each coin, explain:
+
+* Historical context
+* Design features
+* Importance to collectors
+
+Avoid technical catalog details and exact market values.
+
+## Collecting Interest Today
+
+Explain why collectors seek coins from this country. Discuss:
+
+* Popular collecting themes
+* Commonly collected rulers or periods
+* Entry-level collectible coins
+* Historically significant issues
+* General market interest
+
+Do not discuss authentication, grading, or investment advice.
+
+## Cultural Legacy
+
+Explain how the country's coinage reflects its culture, economy, religion, symbols, rulers, or historical achievements.
+
+## Conclusion
+
+Summarize the country's importance in world history and numismatics, emphasizing why its coins and collectibles continue to attract interest today.
+
+Writing Style:
+
+* Museum-curator tone.
+* Informative but engaging.
+* Storytelling elements are encouraged.
+* Focus on historical significance rather than catalog data.
+* Explain why the coinage matters rather than simply listing facts.
+
+Output only the article in clean HTML using:
+
+<h1>, <h2>, <p>, <ul>, <li>
+
+Do not include markdown.
+Do not include references.
+Do not include links.
+Do not include navigation text.
