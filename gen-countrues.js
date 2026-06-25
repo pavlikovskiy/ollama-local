@@ -9,7 +9,7 @@ const ollamaSrv = new Ollama({
 const getPrompt = (wikiUrl) =>
     `COUNTRY_NAME = ${ wikiUrl }` +
     `\n\n` +
-    fs.readFileSync('in/prompt-gpt.txt', 'utf8')
+    fs.readFileSync('in/prompt-gpt-ru.txt', 'utf8')
 
 
 const generateWithOllama = async (id, wikiUrl) => {
@@ -33,7 +33,7 @@ const generateWithOllama = async (id, wikiUrl) => {
 const generate = async () => {
   try {
     // Read local CSV file path
-    const rawData = fs.readFileSync('in/wiki-countries.csv', 'utf-8');
+    const rawData = fs.readFileSync('in/wiki-countries-ru.csv', 'utf-8');
 
     // Process string structure into a 2D array
     const parsedData = rawData
