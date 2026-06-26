@@ -1,4 +1,4 @@
-Generate an original article for www.hobbyray.com about {COUNTRY_NAME}.
+Generate an original article about {COUNTRY_NAME}.
 
 The article is intended for coin collectors, history enthusiasts, and auction buyers. It should be educational, engaging, and written in the style of a museum curator explaining the historical and numismatic significance of the country, empire, kingdom, or state.
 

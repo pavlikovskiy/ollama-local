@@ -6,19 +6,41 @@ const ollamaSrv = new Ollama({
   host: 'http://192.168.0.123:11434'
 })
 
-const getPrompt = (wikiUrl) =>
-    `COUNTRY_NAME = ${ wikiUrl }` +
-    `\n\n` +
-    fs.readFileSync('in/prompt-gpt-ru.txt', 'utf8')
+const fetchWikiText = async (wikiUrl) => {
+  try {
+    const url = new URL(wikiUrl)
+    const title = decodeURIComponent(url.pathname.replace(/^\/wiki\//, ''))
+    const apiBase = `${url.protocol}//${url.host}`
+    const apiUrl = `${apiBase}/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=extracts&explaintext=1&redirects=1&format=json&formatversion=2`
+    const res = await fetch(apiUrl)
+    const data = await res.json()
+    const page = data.query.pages[0]
+    if (page.missing || !page.extract) return ''
+    return page.extract.slice(0, 8000)
+  } catch (e) {
+    console.warn(`  Wikipedia fetch failed for ${wikiUrl}: ${e.message}`)
+    return ''
+  }
+}
+
+const getPrompt = async (wikiUrl) => {
+  const wikiText = await fetchWikiText(wikiUrl)
+  const context = wikiText
+      ? `WIKIPEDIA_CONTEXT:\n${wikiText}\n\n`
+      : ''
+  return `COUNTRY_NAME = ${wikiUrl}\n\n${context}` +
+      fs.readFileSync('in/prompt-gpt-ru.txt', 'utf8')
+}
 
 
 const generateWithOllama = async (id, wikiUrl) => {
   console.log(`Generating ${id} with ${wikiUrl}`);
 
+  const prompt = await getPrompt(wikiUrl)
   const start = Date.now()
   const response = await ollamaSrv.generate({
     model: 'qwen3.5:9b-64k',
-    prompt: getPrompt(wikiUrl),
+    prompt,
     stream: false // Disables line-by-line streaming
   })
   const seconds = (Date.now() - start) / 1000
