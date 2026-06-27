@@ -1,0 +1,69 @@
+Erstelle einen originellen Artikel über {COUNTRY_NAME}.
+
+Der Artikel richtet sich an Münzsammler, Geschichtsinteressierte und Käufer auf Auktionen. Er soll informativ, ansprechend und im Stil eines Museumskurators verfasst sein, der die historische und numismatische Bedeutung des Landes, Reiches, Königreichs oder Staates erklärt.
+
+Anforderungen:
+
+* Länge: 800–1.200 Wörter.
+* Ausschließlich origineller Inhalt.
+* Wikipedia nicht kopieren, paraphrasieren oder zusammenfassen.
+* Keine Quellenangaben, Referenzen, Fußnoten oder externe Links einfügen.
+* Keine modernen politischen Kontroversen erwähnen.
+* Übermäßige Auflistungen von Daten, Kriegen oder Schlachten vermeiden.
+* In klarem, professionellem Deutsch schreiben, das für ein breites Publikum verständlich ist.
+* Ausgewogene Gewichtung:
+
+  * Etwa 60 % historischer und kultureller Kontext.
+  * Etwa 40 % Münz- und Währungsgeschichte.
+* Schwerpunkt auf Themen, die für Sammler besonders interessant sind.
+
+Struktur:
+
+# {COUNTRY_NAME}: Geschichte, Münzprägung und Sammlerstücke
+
+## Historischer Hintergrund
+
+Beschreibe die wichtigsten historischen Entwicklungen, die das Land, Reich, Königreich oder den Staat geprägt haben. Konzentriere dich auf Ereignisse, die Handel, Wirtschaft, Kultur und Geldwesen beeinflusst haben.
+
+## Geschichte von Währung und Münzprägung
+
+Erläutere, wie sich das Geldwesen in dieser Region entwickelt hat. Beschreibe bedeutende Währungsreformen, wichtige Phasen der Münzproduktion sowie die Rolle der Münzprägung für Handel und Regierung.
+
+## Münzstätten und Münzproduktion
+
+Beschreibe bedeutende Münzstätten, Produktionszentren, Prägetraditionen, Technologien und künstlerische Merkmale, die die Münzen des Landes auszeichnen.
+
+## Bedeutende Münzen
+
+Beschreibe mehrere der historisch wichtigsten oder am häufigsten gesammelten Münztypen. Erläutere für jede Münze:
+
+* Historischen Kontext
+* Gestaltungsmerkmale
+* Bedeutung für Sammler
+
+Vermeide technische Katalogangaben und konkrete Marktwerte.
+
+## Kulturelles Erbe
+
+Erkläre, wie die Münzprägung die Kultur, Wirtschaft, Religion, Symbole, Herrscher oder historischen Leistungen des Landes widerspiegelt.
+
+## Für Sammler
+
+Gib einen kurzen Überblick über die historische Bedeutung des Landes und erläutere, warum es für Sammler bis heute von besonderem Interesse ist.
+
+Schreibstil:
+
+* Ton eines Museumskurators.
+* Informativ, aber zugleich fesselnd.
+* Erzählerische Elemente sind ausdrücklich erwünscht.
+* Schwerpunkt auf historischer Bedeutung statt auf Katalogdaten.
+* Erkläre, warum die Münzprägung wichtig ist, anstatt lediglich Fakten aufzulisten.
+
+Gib ausschließlich den Artikel als sauberes HTML aus und verwende dabei nur folgende Elemente:
+
+<h1>, <h2>, <p>, <ul>, <li>
+
+Kein Markdown verwenden.
+Keine Referenzen einfügen.
+Keine Links einfügen.
+Keine Navigations- oder Menütexte ausgeben.
