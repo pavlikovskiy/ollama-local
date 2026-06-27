@@ -25,20 +25,20 @@ const fetchWikiText = async (wikiUrl) => {
   }
 }
 
-const getPrompt = async (wikiUrl) => {
+const getPrompt = async (wikiUrl, lang) => {
   const wikiText = await fetchWikiText(wikiUrl)
   const context = wikiText
       ? `WIKIPEDIA_CONTEXT:\n${wikiText}\n\n`
       : ''
   return `COUNTRY_NAME = ${wikiUrl}\n\n${context}` +
-      fs.readFileSync('in/prompt-gpt-uk.txt', 'utf8')
+      fs.readFileSync(`in/prompt-gpt-${lang}.txt`, 'utf8')
 }
 
 
-const generateWithOllama = async (id, wikiUrl) => {
+const generateWithOllama = async (id, wikiUrl, lang) => {
   console.log(`Generating ${id} with ${wikiUrl}`);
 
-  const prompt = await getPrompt(wikiUrl)
+  const prompt = await getPrompt(wikiUrl, lang)
   const start = Date.now()
   const response = await ollamaSrv.generate({
     model: 'qwen3.5:9b-64k',
@@ -69,7 +69,7 @@ const generate = async (lang) => {
     for (const row of parsedData) {
       if (!fs.existsSync(`out-${lang}/${row[0]}.html`)) { // fix lang
         try {
-          let response = await generateWithOllama(row[0], row[1]);
+          let response = await generateWithOllama(row[0], row[1], lang);
           let id = row[0];
           const outputFile = `out-${lang}/${id}.html`
           fs.writeFileSync(outputFile, response.response)
@@ -88,5 +88,6 @@ const generate = async (lang) => {
 }
 
 await generate('uk')
+await generate('zh')
 
 // await translationWithOllama()
