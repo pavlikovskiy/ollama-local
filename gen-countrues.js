@@ -1,6 +1,8 @@
 import ollama, {Ollama} from 'ollama'
 import fs from 'fs'
 
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 // Initialize the client with your external URL
 const ollamaSrv = new Ollama({
   host: 'http://192.168.0.123:11434'
@@ -29,7 +31,7 @@ const getPrompt = async (wikiUrl) => {
       ? `WIKIPEDIA_CONTEXT:\n${wikiText}\n\n`
       : ''
   return `COUNTRY_NAME = ${wikiUrl}\n\n${context}` +
-      fs.readFileSync('in/prompt-gpt-ru.txt', 'utf8')
+      fs.readFileSync('in/prompt-gpt-uk.txt', 'utf8')
 }
 
 
@@ -46,16 +48,17 @@ const generateWithOllama = async (id, wikiUrl) => {
   const seconds = (Date.now() - start) / 1000
 
 // Access the flat response field
-  const outputFile = `out/${id}.html`
-  fs.writeFileSync(outputFile, response.response)
+//   const outputFile = `out/${id}.html`
+//   fs.writeFileSync(outputFile, response.response)
   // console.log(response.response)
   console.log(`Generation time: ${seconds.toFixed(0)}s`)
+  return response
 }
 
-const generate = async () => {
+const generate = async (lang) => {
   try {
     // Read local CSV file path
-    const rawData = fs.readFileSync('in/wiki-countries-ru.csv', 'utf-8');
+    const rawData = fs.readFileSync(`in/wiki-countries-${lang}.csv`, 'utf-8');
 
     // Process string structure into a 2D array
     const parsedData = rawData
@@ -64,8 +67,18 @@ const generate = async () => {
         .map(row => row.split(','));
 
     for (const row of parsedData) {
-      if (!fs.existsSync(`done/${row[0]}.html`, 'utf8'))
-        await generateWithOllama(row[0], row[1]);
+      if (!fs.existsSync(`out-${lang}/${row[0]}.html`)) { // fix lang
+        try {
+          let response = await generateWithOllama(row[0], row[1]);
+          let id = row[0];
+          const outputFile = `out-${lang}/${id}.html`
+          fs.writeFileSync(outputFile, response.response)
+
+        } catch (er1) {
+          console.error(`Error ${row[0]} - ${row[1]}`, er1);
+          await delay(3000);
+        }
+      }
     }
 
     // console.log(parsedData);
@@ -74,6 +87,6 @@ const generate = async () => {
   }
 }
 
-await generate()
+await generate('uk')
 
 // await translationWithOllama()

@@ -9,16 +9,16 @@ const config = {
   database: process.env.DB_NAME     || 'wiki',
 }
 
-const updateDb = async () => {
+const updateDb = async (lang) => {
   const connection = await mysql.createConnection(config)
 
   try {
-    const files = fs.readdirSync('out').filter(f => f.endsWith('.html'))
-    console.log(`Found ${files.length} file(s) in out/`)
+    const files = fs.readdirSync(`out-${lang}`).filter(f => f.endsWith('.html'))
+    console.log(`Found ${files.length} file(s) in out-${lang}/`)
 
     for (const file of files) {
       const id = file.slice(0, -'.html'.length)
-      const pageClob = fs.readFileSync(`out/${file}`, 'utf8')
+      const pageClob = fs.readFileSync(`out-${lang}/${file}`, 'utf8')
       const creationDate = new Date()
 
       const [result] = await connection.execute(
@@ -27,10 +27,10 @@ const updateDb = async () => {
       )
 
       if (result.affectedRows > 0) {
-        fs.renameSync(`out/${file}`, `done/${file}`)
-        console.log(`Updated ${id} -> moved to done/`)
+        fs.renameSync(`out-${lang}/${file}`, `done-${lang}/${file}`)
+        console.log(`Updated ${id} -> moved to done-${lang}/`)
       } else {
-        console.warn(`No row for id ${id}, skipping (left in out/)`)
+        console.warn(`No row for id ${id}, skipping (left in out-${lang}/)`)
       }
     }
   } catch (error) {
@@ -40,4 +40,4 @@ const updateDb = async () => {
   }
 }
 
-await updateDb()
+await updateDb('uk')
