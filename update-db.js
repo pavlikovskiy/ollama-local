@@ -36,9 +36,10 @@ const updateDb = async (lang) => {
   } catch (error) {
     console.error('Error updating the database:', error)
   } finally {
-    await connection.end()
+    connection.end()
   }
 }
 
 await updateDb('uk')
 await updateDb('zh')
+await updateDb('de')

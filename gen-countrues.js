@@ -1,4 +1,4 @@
-import ollama, {Ollama} from 'ollama'
+import {Ollama} from 'ollama'
 import fs from 'fs'
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -36,7 +36,7 @@ const getPrompt = async (wikiUrl, lang) => {
 
 
 const generateWithOllama = async (id, wikiUrl, lang) => {
-  console.log(`Generating ${id} with ${wikiUrl}`);
+  console.log(`Generating ${lang} ${id} with ${wikiUrl}`);
 
   const prompt = await getPrompt(wikiUrl, lang)
   const start = Date.now()
@@ -46,11 +46,6 @@ const generateWithOllama = async (id, wikiUrl, lang) => {
     stream: false // Disables line-by-line streaming
   })
   const seconds = (Date.now() - start) / 1000
-
-// Access the flat response field
-//   const outputFile = `out/${id}.html`
-//   fs.writeFileSync(outputFile, response.response)
-  // console.log(response.response)
   console.log(`Generation time: ${seconds.toFixed(0)}s`)
   return response
 }
@@ -67,7 +62,7 @@ const generate = async (lang) => {
         .map(row => row.split(','));
 
     for (const row of parsedData) {
-      if (!fs.existsSync(`out-${lang}/${row[0]}.html`)) { // fix lang
+      if (!fs.existsSync(`out-${lang}/${row[0]}.html`)) {
         try {
           let response = await generateWithOllama(row[0], row[1], lang);
           let id = row[0];
@@ -78,10 +73,9 @@ const generate = async (lang) => {
           console.error(`Error ${row[0]} - ${row[1]}`, er1);
           await delay(3000);
         }
-      }
-    }
+      } // if (!fs.existsSync(`out-${lang}/${row[0]}.html`))
+    } // for (const row of parsedData)
 
-    // console.log(parsedData);
   } catch (error) {
     console.error("Error reading the CSV file:", error);
   }
@@ -89,5 +83,4 @@ const generate = async (lang) => {
 
 await generate('uk')
 await generate('zh')
-
-// await translationWithOllama()
+await generate('de')
