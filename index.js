@@ -7,9 +7,9 @@ const ollamaSrv = new Ollama({
 })
 
 const getPrompt = () =>
-    `COUNTRY_NAME = https://en.wikipedia.org/wiki/Roman_Empire` +
-    `\n\n` +
-    fs.readFileSync('in/prompt-gpt.txt', 'utf8')
+    `fetch https://en.wikipedia.org/wiki/Roman_Empire` +
+    `\n\n and show first 100 words `;
+    // fs.readFileSync('in/prompt-gpt.txt', 'utf8')
 
 
 const translationWithOllama = async () => {
