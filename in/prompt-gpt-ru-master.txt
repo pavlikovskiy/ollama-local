@@ -5,7 +5,7 @@ please translate the prompt to generate Russian articles
 e.g. COUNTRY_NAME = https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D1%8F%D1%89%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%A0%D0%B8%D0%BC%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F
 
 ----------------------------------
-Generate an original article for www.hobbyray.com about {COUNTRY_NAME}.
+Generate an original article about {COUNTRY_NAME}.
 
 The article is intended for coin collectors, history enthusiasts, and auction buyers. It should be educational, engaging, and written in the style of a museum curator explaining the historical and numismatic significance of the country, empire, kingdom, or state.
 
