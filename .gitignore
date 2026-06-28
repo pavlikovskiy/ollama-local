@@ -1,8 +1,17 @@
 /node_modules
 /.idea
 /out-uk
+/out-zh
+/out-de
+/out-es
+/out-fr
+/out-it
 
 /done-en
 /done-ru
 /done-uk
 /done-zh
+/done-de
+/done-es
+/done-fr
+/done-it
