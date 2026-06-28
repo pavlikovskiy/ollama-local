@@ -43,3 +43,4 @@ const updateDb = async (lang) => {
 await updateDb('uk')
 await updateDb('zh')
 await updateDb('de')
+await updateDb('es')

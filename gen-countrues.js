@@ -84,3 +84,4 @@ const generate = async (lang) => {
 await generate('uk')
 await generate('zh')
 await generate('de')
+await generate('es')

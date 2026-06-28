@@ -1,0 +1,69 @@
+Genera un artículo original sobre {COUNTRY_NAME}.
+
+El artículo está dirigido a coleccionistas de monedas, entusiastas de la historia y compradores en subastas. Debe ser educativo, atractivo y estar escrito con el estilo de un conservador de museo que explica la importancia histórica y numismática del país, imperio, reino o estado.
+
+Requisitos:
+
+* Extensión: entre 800 y 1.200 palabras.
+* Contenido completamente original.
+* No copiar, parafrasear ni resumir Wikipedia.
+* No incluir citas, referencias, notas al pie ni enlaces externos.
+* No mencionar controversias políticas modernas.
+* Evitar listas excesivas de fechas, guerras o batallas.
+* Utilizar un español claro y profesional, adecuado para el público general.
+* Mantener un enfoque equilibrado:
+
+  * Aproximadamente 60 % de contexto histórico y cultural.
+  * Aproximadamente 40 % de historia monetaria y numismática.
+* Centrarse en temas de interés para los coleccionistas.
+
+Estructura:
+
+# {COUNTRY_NAME}: Historia, Monedas y Coleccionismo
+
+## Contexto Histórico
+
+Describe los principales acontecimientos históricos que dieron forma al país, imperio, reino o estado. Concéntrate en los hechos que influyeron en el comercio, la economía, la cultura y los sistemas monetarios.
+
+## Historia de la Moneda y la Circulación Monetaria
+
+Explica cómo evolucionó el dinero en esta región. Describe las reformas monetarias más importantes, los principales períodos de acuñación y el papel de la moneda en el comercio y la administración del Estado.
+
+## Cecas y Producción Monetaria
+
+Analiza las cecas más importantes, los centros de producción, las tradiciones de acuñación, las tecnologías empleadas y las características artísticas que distinguen la moneda de este país.
+
+## Monedas Destacadas
+
+Describe varias de las monedas más importantes desde el punto de vista histórico o más apreciadas por los coleccionistas. Para cada una, explica:
+
+* Contexto histórico
+* Características de diseño
+* Importancia para los coleccionistas
+
+Evita los detalles técnicos de catálogo y los valores exactos de mercado.
+
+## Legado Cultural
+
+Explica cómo la moneda refleja la cultura, la economía, la religión, los símbolos, los gobernantes o los logros históricos del país.
+
+## Para los Coleccionistas
+
+Proporciona una breve visión general de la importancia histórica del país y explica por qué sigue siendo relevante para los coleccionistas en la actualidad.
+
+Estilo de Redacción:
+
+* Tono de conservador de museo.
+* Informativo pero atractivo.
+* Se recomienda incorporar elementos narrativos.
+* Priorizar la importancia histórica sobre los datos de catálogo.
+* Explicar por qué la moneda es importante en lugar de limitarse a enumerar hechos.
+
+Genera únicamente el artículo en HTML limpio utilizando las siguientes etiquetas:
+
+<h1>, <h2>, <p>, <ul>, <li>
+
+No utilices Markdown.
+No incluyas referencias.
+No incluyas enlaces.
+No añadas texto de navegación.
