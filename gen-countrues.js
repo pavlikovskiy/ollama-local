@@ -62,7 +62,7 @@ const generate = async (lang) => {
         .map(row => row.split(','));
 
     for (const row of parsedData) {
-      if (!fs.existsSync(`out-${lang}/${row[0]}.html`)) {
+      if (!fs.existsSync(`done-${lang}/${row[0]}.html`)) {
         try {
           let response = await generateWithOllama(row[0], row[1], lang);
           let id = row[0];
