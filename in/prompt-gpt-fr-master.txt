@@ -1,0 +1,77 @@
+Prompt bellow is used to generate English articles
+e.g. COUNTRY_NAME = https://en.wikipedia.org/wiki/Holy_Roman_Empire
+
+please translate the prompt to generate French articles
+e.g. COUNTRY_NAME = https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique
+
+----------------------------------
+Generate an original article about {COUNTRY_NAME}.
+
+The article is intended for coin collectors, history enthusiasts, and auction buyers. It should be educational, engaging, and written in the style of a museum curator explaining the historical and numismatic significance of the country, empire, kingdom, or state.
+
+Requirements:
+
+* Length: 800-1,200 words.
+* Original content only.
+* Do not copy, paraphrase, or summarize Wikipedia.
+* Do not include citations, references, footnotes, or external links.
+* Do not mention modern political controversies.
+* Avoid excessive lists of dates, battles.
+* Write in clear, professional English suitable for a general audience.
+* Use a balanced approach:
+
+  * Approximately 60% historical and cultural context.
+  * Approximately 40% coinage and numismatic history.
+* Focus on topics valuable to collectors.
+
+Structure:
+
+# {COUNTRY_NAME}: History, Coinage and Collectibles
+
+## Historical Background
+
+Describe the major historical developments that shaped the country, empire, kingdom, or state. Focus on events that influenced trade, economy, culture, and monetary systems.
+
+## Currency and Coinage History
+
+Explain how money evolved in this region. Describe important monetary reforms, major periods of coin production, and the role of coinage in commerce and government.
+
+## Mints and Coin Production
+
+Discuss important mints, production centers, minting traditions, technologies, and artistic characteristics that distinguish the country's coinage.
+
+## Notable Coins
+
+Describe several of the most historically important or widely collected coin types. For each coin, explain:
+
+* Historical context
+* Design features
+* Importance to collectors
+
+Avoid technical catalog details and exact market values.
+
+## Cultural Legacy
+
+Explain how the country's coinage reflects its culture, economy, religion, symbols, rulers, or historical achievements.
+
+## For collectors
+Provide a concise overview of the country's historical significance and why it remains important to collectors today.
+
+Writing Style:
+
+* Museum-curator tone.
+* Informative but engaging.
+* Storytelling elements are encouraged.
+* Focus on historical significance rather than catalog data.
+* Explain why the coinage matters rather than simply listing facts.
+
+Output only the article in clean HTML using:
+
+<h1>, <h2>, <p>, <ul>, <li>
+
+Do not include markdown.
+Do not include references.
+Do not include links.
+Do not include navigation text.
+
+----------------------------------

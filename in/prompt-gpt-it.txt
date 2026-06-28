@@ -1,0 +1,69 @@
+Genera un articolo originale su {COUNTRY_NAME}.
+
+L'articolo è destinato a collezionisti di monete, appassionati di storia e acquirenti di aste numismatiche. Deve essere educativo, coinvolgente e scritto nello stile di un curatore museale che illustra il significato storico e numismatico del paese, impero, regno o stato.
+
+Requisiti:
+
+* Lunghezza: 800-1.200 parole.
+* Contenuto completamente originale.
+* Non copiare, parafrasare o riassumere Wikipedia.
+* Non includere citazioni, riferimenti, note a piè di pagina o collegamenti esterni.
+* Non menzionare controversie politiche moderne.
+* Evitare elenchi eccessivi di date, guerre o battaglie.
+* Scrivere in un italiano chiaro e professionale, adatto a un pubblico generale.
+* Utilizzare un approccio equilibrato:
+
+  * Circa il 60% dedicato al contesto storico e culturale.
+  * Circa il 40% dedicato alla storia monetaria e numismatica.
+* Concentrarsi sugli aspetti di maggiore interesse per i collezionisti.
+
+Struttura:
+
+# {COUNTRY_NAME}: Storia, Monetazione e Collezionismo
+
+## Contesto Storico
+
+Descrivi i principali sviluppi storici che hanno plasmato il paese, l'impero, il regno o lo stato. Concentrati sugli eventi che hanno influenzato il commercio, l'economia, la cultura e i sistemi monetari.
+
+## Storia della Valuta e della Monetazione
+
+Spiega come il denaro si è evoluto in questa regione. Descrivi le principali riforme monetarie, i periodi più importanti della produzione di monete e il ruolo della monetazione nel commercio e nel governo.
+
+## Zecche e Produzione Monetaria
+
+Parla delle principali zecche, dei centri di produzione, delle tradizioni di coniazione, delle tecnologie utilizzate e delle caratteristiche artistiche che distinguono la monetazione del paese.
+
+## Monete più Rilevanti
+
+Descrivi alcune delle tipologie monetarie più importanti dal punto di vista storico o maggiormente collezionate. Per ogni moneta, spiega:
+
+* Contesto storico
+* Caratteristiche del design
+* Importanza per i collezionisti
+
+Evita dettagli tecnici di catalogo e valori di mercato specifici.
+
+## Eredità Culturale
+
+Spiega come la monetazione del paese rifletta la sua cultura, economia, religione, simboli, sovrani o realizzazioni storiche.
+
+## Per i Collezionisti
+
+Fornisci una sintesi concisa dell'importanza storica del paese e delle ragioni per cui continua a essere significativo per i collezionisti di oggi.
+
+Stile di Scrittura:
+
+* Tono da curatore museale.
+* Informativo ma coinvolgente.
+* Sono incoraggiati elementi narrativi.
+* Concentrarsi sull'importanza storica piuttosto che sui dati di catalogo.
+* Spiegare perché la monetazione è importante, anziché limitarsi a elencare fatti.
+
+Restituisci esclusivamente l'articolo in HTML pulito utilizzando i seguenti tag:
+
+<h1>, <h2>, <p>, <ul>, <li>
+
+Non utilizzare Markdown.
+Non includere riferimenti.
+Non includere collegamenti.
+Non includere testo di navigazione.

@@ -1,0 +1,69 @@
+Générez un article original sur {COUNTRY_NAME}.
+
+L’article est destiné aux collectionneurs de monnaies, aux passionnés d’histoire et aux acheteurs lors de ventes aux enchères. Il doit être pédagogique, captivant et rédigé dans le style d’un conservateur de musée expliquant l’importance historique et numismatique du pays, de l’empire, du royaume ou de l’État concerné.
+
+Exigences :
+
+* Longueur : 800 à 1 200 mots.
+* Contenu entièrement original.
+* Ne pas copier, paraphraser ni résumer Wikipédia.
+* Ne pas inclure de citations, références, notes de bas de page ou liens externes.
+* Ne pas mentionner de controverses politiques contemporaines.
+* Éviter les listes excessives de dates ou de batailles.
+* Rédiger dans un français clair et professionnel, accessible à un large public.
+* Adopter une approche équilibrée :
+
+  * Environ 60 % de contexte historique et culturel.
+  * Environ 40 % d’histoire monétaire et numismatique.
+* Mettre l’accent sur les sujets présentant un intérêt particulier pour les collectionneurs.
+
+Structure :
+
+# {COUNTRY_NAME} : Histoire, Monnayage et Objets de Collection
+
+## Contexte historique
+
+Décrivez les principaux développements historiques qui ont façonné le pays, l’empire, le royaume ou l’État. Concentrez-vous sur les événements ayant influencé le commerce, l’économie, la culture et les systèmes monétaires.
+
+## Histoire de la monnaie et du monnayage
+
+Expliquez comment la monnaie a évolué dans cette région. Décrivez les principales réformes monétaires, les grandes périodes de production monétaire et le rôle des monnaies dans le commerce et l’administration.
+
+## Ateliers monétaires et production des monnaies
+
+Présentez les principaux ateliers monétaires, centres de production, traditions de frappe, technologies employées et caractéristiques artistiques qui distinguent le monnayage du pays.
+
+## Monnaies remarquables
+
+Décrivez plusieurs des types de monnaies les plus importants sur le plan historique ou les plus recherchés par les collectionneurs. Pour chaque monnaie, expliquez :
+
+* Son contexte historique
+* Ses caractéristiques de conception
+* Son intérêt pour les collectionneurs
+
+Évitez les détails techniques de catalogues et les valeurs de marché exactes.
+
+## Héritage culturel
+
+Expliquez comment le monnayage du pays reflète sa culture, son économie, sa religion, ses symboles, ses souverains ou ses réalisations historiques.
+
+## Pour les collectionneurs
+
+Présentez un aperçu concis de l’importance historique du pays et expliquez pourquoi son monnayage continue d’intéresser les collectionneurs aujourd’hui.
+
+Style de rédaction :
+
+* Ton de conservateur de musée.
+* Informatif tout en restant captivant.
+* Les éléments narratifs sont encouragés.
+* Mettre l’accent sur l’importance historique plutôt que sur les données de catalogue.
+* Expliquer pourquoi les monnaies sont importantes plutôt que de simplement énumérer des faits.
+
+Produisez uniquement l’article en HTML propre en utilisant les balises :
+
+<h1>, <h2>, <p>, <ul>, <li>
+
+N’utilisez pas de Markdown.
+N’incluez pas de références.
+N’incluez pas de liens.
+N’ajoutez aucun texte de navigation.
